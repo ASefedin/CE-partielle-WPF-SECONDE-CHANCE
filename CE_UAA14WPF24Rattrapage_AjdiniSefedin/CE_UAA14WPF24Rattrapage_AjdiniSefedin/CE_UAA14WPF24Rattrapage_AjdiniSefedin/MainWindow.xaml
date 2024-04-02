@@ -1,0 +1,52 @@
+﻿<Window x:Class="CE_UAA14WPF24Rattrapage_AjdiniSefedin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CE_UAA14WPF24Rattrapage_AjdiniSefedin"
+        mc:Ignorable="d"
+        Title="CE WPF CHANCE 2" Height="1000" Width="1200">
+    <Grid Background="#EBD9B4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.ColumnSpan="2" TextAlignment="Center" Margin="10,10,10,10" FontSize="34" Foreground="#9DBC9B" FontWeight="Bold">VERIFIONS VOS CONNAISSANCES en WPF !</TextBlock>
+
+        <GroupBox FontWeight="Bold" FontSize="22" Header="Parametrage" Padding="5,5,5,5" Grid.Row="1" Grid.Column="1" Background="#9DBC9B">
+            <StackPanel>
+                <GroupBox FontWeight="Bold" FontSize="22" Header="Choix De La Disposition" Margin="5,5,5,5">
+                    <StackPanel>
+                        <RadioButton FontWeight="Bold" FontSize="22" x:Name="Solitaire" Margin="5,5,5,5" Checked="CheckedBox">Solitaire</RadioButton>
+                        <RadioButton FontWeight="Bold" FontSize="22" x:Name="Marelle" Margin="5,5,5,5" Checked="CheckedBox">Marelle</RadioButton>
+                        <RadioButton FontWeight="Bold" FontSize="22" x:Name="BandeLaterale" Margin="5,5,5,5" Checked="CheckedBox">Une Bande Latérale</RadioButton>
+                    </StackPanel>
+                </GroupBox>
+                <StackPanel>
+                    <GroupBox FontWeight="Bold" FontSize="22" x:Name="NbLC" Header="Taille Du Plateau">
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold" FontSize="22" Margin="5,5,5,5">Nombre De Ligne : <TextBox x:Name="NbLigne" Margin="5,5,5,0" Width="80"></TextBox></TextBlock>
+                            <TextBlock FontWeight="Bold" FontSize="22" Margin="5,5,5,5">Nombre De Colonne : <TextBox x:Name="NbColonne" Margin="5,5,5,0" Width="50"></TextBox></TextBlock>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+                <Button FontWeight="Bold" FontSize="22" x:Name="Valider" Height="50" Margin="0,10,0,10" >Valider</Button>
+                <Button FontWeight="Bold" FontSize="22" x:Name="Reset" Height="50" Margin="0,10,0,10">Reset</Button>
+            </StackPanel>
+        </GroupBox>
+
+
+
+        <TextBlock FontWeight="Bold" Foreground="Red" Grid.Row="2" Grid.ColumnSpan="2" TextAlignment="Center" FontSize="30" Margin="10,10,10,10">Test WPF 6T 2024</TextBlock>
+
+        <Grid x:Name="grdMain" Grid.Row="1">
+            
+        </Grid>
+    </Grid>
+</Window>
